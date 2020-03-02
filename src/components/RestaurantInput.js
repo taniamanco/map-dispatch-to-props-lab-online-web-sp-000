@@ -51,4 +51,8 @@ export class RestaurantInput extends Component {
 
 
 //connect this component by wrapping RestaurantInput below
+const mapStateToProps = state => {
+  return { restaurants: state.restaurants }
+}
+
 export default connect(mapStateToProps)(Restaurants);
